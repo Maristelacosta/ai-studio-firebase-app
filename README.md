@@ -1,8 +1,19 @@
 ﻿# aplicativo ai-studio-firebase
 
-Aplicacao web integrada com Firebase (Hosting e Analytics) e Google AI Studio, estruturada com variaveis de ambiente e configuracao segura via .env.example.
+Aplicativo web integrado com **Firebase** (Hosting e Analytics) e **Google AI Studio**, estruturado com arquitetura limpa e boas práticas de segurança por meio de variáveis de ambiente (`VITE_FIREBASE_*`).
 
-## Configuracao local
+## Destaques do projeto
 
-1. Copie o ficheiro .env.example para .env na raiz do projeto.
-2. Preencha as variaveis VITE_FIREBASE_* com os dados do seu projeto Firebase.
+* **Firebase (Hosting & Analytics):** base preparada para inicialização do aplicativo, hospedagem web e acompanhamento de métricas.
+* **Google AI Studio:** estrutura pensada para evoluir funcionalidades e integrações com inteligência artificial.
+* **Segurança de credenciais:** separação entre o arquivo de exemplo (`.env.example`) e as credenciais locais (`.env`), ignoradas pelo Git via `.gitignore`.
+
+## Estrutura do repositório
+
+```text
+ai-studio-firebase-app/
+├── src/
+├── .env.example
+├── .gitignore
+├── index.html
+└── README.md
